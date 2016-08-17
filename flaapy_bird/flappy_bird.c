@@ -156,8 +156,8 @@ int main ()
 
 		ch = getch ();
 		if (ch == ' ' || ch == 'w' || ch == 'W') {
-			move (bird_y, bird_x);
-			addch (CHAR_BLANK);
+			move (bird_y, bird_x);		//move x to y
+			addch (CHAR_BLANK);			//x --> ' '
 			refresh ();
 			bird_y--;
 			move (bird_y, bird_x);
